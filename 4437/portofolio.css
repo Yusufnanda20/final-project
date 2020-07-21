@@ -1,0 +1,61 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'tahoma',sans-serif;
+	margin: 0;
+	background: white;
+	
+}
+
+.yusuf-header{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	border: 1px solid #DCDCDC;
+	margin: 0px;
+	padding: 5px;
+	padding-right: 150px;
+	font-size: 24px;
+	text-align: center;
+	background: white;
+	color: #013220;
+}
+.yusuf-header img{
+	float: left;
+	height: 100px;
+	width: 200px;
+	margin: 10px;
+	margin-left: 150px;
+	margin-top: 15px;
+}
+
+.yusuf-bg-dark{
+	 background-color: #000d1a !important;
+}
+
+ .carousel-item img {
+      height: 500px;
+      
+    }
+
+ .image-responsive{
+  height: 30px;
+  width: 30px;
+  margin :10px;
+}
+
+footer{
+      width:100%;
+      margin-top:1px;
+      background: #000d1a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    img{
+      text-align: center;
+      width: 300px;
+      height: 150px;
+      margin: 10px;
+		}

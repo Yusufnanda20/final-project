@@ -1,0 +1,69 @@
+/* header */
+.yusuf-header{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	border: 1px solid #DCDCDC;
+	margin: 0px;
+	padding: 5px;
+	padding-right: 150px;
+	font-size: 24px;
+	text-align: center;
+	background: white;
+	color: #013220;
+}
+.yusuf-header img{
+	float: left;
+	height: 100px;
+	width: 200px;
+	margin: 10px;
+	margin-left: 150px;
+	margin-top: 15px;
+}
+.yusuf-bg-dark{
+	 background-color: #000d1a !important;
+}
+/* skill rating */
+.side{
+	float: left;
+	width: 15%;
+	margin-top: 30px;
+}
+.middle{
+	margin-top: 30px;
+	float: left;
+	width: 70%;
+}
+.right{
+	text-align: right;
+}
+.rows:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.bar-container{
+	width: 100%;
+	background-color: grey;
+	text-align: center;
+	color: white;
+}
+.bar-1 {width: 70%; height: 20px; background: #000d1a}
+.bar-2 {width: 50%; height: 20px; background: #000d1a}
+.bar-3 {width: 30%; height: 20px; background: #000d1a}
+.bar-4 {width: 75%; height: 20px; background: #000d1a}
+
+footer{
+      width:100%;
+      margin-top:10px;
+      background: #000d1a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    img{
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+		}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="StyleProfile.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.min.css">
+
+
+	<!-- javascript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="filebootstrap/js/jquery.min.js"></script>
+  
+<!--Membuat JS animasi section-->
+<script>
+  $(document).ready(function(){
+    // add smoth scroling to all links
+    $("a").on('click',function(event){
+
+      // make sure this.hash has a value before overiding default behavior
+      if (this.hash !== ""){
+        // prevent default anchor click behavior
+        event.preventDefault();
+
+        // store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smoth page scroll 
+        // the optional number (800) specifies the number of millisecond it take to scroll to the specified area
+        $('html,body').animate({
+          scrollTop: $(hash).offset().top
+        },800,function(){
+
+          // add hash (#) to URL when done scrolling(default click behavior)
+          window.location.hash = hash;
+        });
+      } // end if
+    });
+  });
+</script>
+
+<script>
+  // membuat js scroll bar 
+  window.ondcroll = function() {myFunction()};
+
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) = 100;
+    document.getElementById("myScrollBar").style.width = scrolled + "%";
+  }
+</script>
+
+<!-- js download bar -->
+<script>
+  var i = 0;
+  function move(){
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("bar");
+      var width = 1;
+      var id = setInterval(frame,50);
+      function frame() {
+        if (width >= 100){
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+        }
+      }
+    }
+  }
+</script>
+
+<!-- js auto close -->
+<script>
+  setTimeOut(function() {
+    $('#exampleModal').modal('hide');
+  },7000);
+</script>
+	<title>Yusuf Nanda Praditya</title>
+</head>
+<body>
+	<div class="yusuf-header">
+		<img src="img/logo.png">
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark yusuf-bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar10">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portofolio.html">Portfolio</a>
+                    
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skill.html">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Social Media.html">Social Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="F P Gallery.html">F  P Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                <div class="yusuf-profil">
+					<div class="yusuf-gambar">
+						<img src="img/aku3.jpg">
+					</div>
+				</div>
+				<div class="yusuf-nama"><b>Yusuf Nanda Praditya</b></div>
+			<div class="container">
+                      <blockquote> Born In Yogyakarta July 2000, spent his childhood in Kulon Progo. Yusuf is a student at Amikom University Yogyakarta, now live in Yogyakarta. His hobby is travelling and hiking. until now he has hike about twelve times on many mountains in Java Indonesia. Have a goal to be a web developer / programmer
+                      </blockquote>
+
+                      <p>This paragraph is translated by google translate :D</p>
+                    </div>
+                </div>
+            </form>               
+        </div>
+      </div>
+      <!-- modal -->
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-toggle= "modal" data-target= "#contohmodal" style="background: #000d1a;">Student Number</button>
+  <div class="modal fade" id="contohmodal" role= "dialog" arialabelledby= "modallabel" aria-hidden="true">
+  <div class="modal-dialog" role= "document">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h4 class="modal-tittle">Name & Student Number</h4>
+  <button type="button"  class="close" data-dismiss="modal" aria-label ="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+    
+  <div class="modal-body">
+    <form>
+      <h3 style="text-align: center;">Yusuf Nanda Praditya</h3>
+      <h4 style="text-align: center;">19.01.4437</h4>
+    <div class="modal-body">
+      <center>
+        <img src="img/lawu.jpg" alt="" class="img-responsive">
+      </center>
+    </div>
+    </div>
+  </div> 
+  </div>
+  </div> 
+  </div>
+    <footer >
+      <img src="img/ig3.png" class="image-responsive">
+      <img src="img/fb3.png" class="image-responsive">
+      <img src="img/twiiter.png" class="image-responsive">
+      <h4>&copy Yusuf Nanda Praditya - 2020</h4>
+  </footer>
+
+</body>
+</html>

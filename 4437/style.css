@@ -1,0 +1,67 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'tahoma', sans-serif;
+	background: white;
+}
+
+.yusuf-gambar-samping{
+	float: left;
+	width: 50%
+	padding:10px;
+}
+.yusuf-gambar-samping img{
+	width: 650px;
+	height: 680px;
+}
+.yusuf-header{
+	float: right;
+	background:white;
+	font-size: 12px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	width: 45%;
+	color: black;
+}
+
+.yusuf-gambar{
+	float: right;
+	margin-right: 150px;
+	margin-top: 100px;
+}
+
+.yusuf-gambar img{
+	width: 400px;
+	height: 200px;
+}
+
+.yusuf-quotes{
+	float: right;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 50px;
+	margin-right: 200px;
+	font-style: italic;
+	color: black;
+}
+
+.yusuf-navbar{
+	font-family: bebas;
+	float:right;
+	font-size: 24px;
+	width: 50%;
+	text-align: center;
+	color: black;
+	padding-top: 30px;
+
+}
+
+.yusuf-navbar a{
+	padding: 14px 20px;
+	text-decoration: none;
+	border: 1px solid #DCDCDC;
+	color: black;
+}
